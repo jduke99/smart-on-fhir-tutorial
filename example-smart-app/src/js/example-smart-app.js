@@ -30,6 +30,13 @@
                 }
           });
 
+        var dxreports = smart.patient.api.fetchAll({
+            type: 'DiagnosticReport',
+          query: {
+                    
+                }
+          });
+        
         $.when(pt, obv).fail(onError);
 
         $.when(pt, obv).done(function(patient, obv) {
