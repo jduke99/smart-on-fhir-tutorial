@@ -21,6 +21,10 @@
                       }
                     }
                   });
+        
+        var docs = smart.patient.api.fetchAll({
+            type: 'DocumentReference'
+          });
 
         $.when(pt, obv).fail(onError);
 
